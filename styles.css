@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff; /* Cor da janela de pesquisa */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Empilha verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    width: 90%; /* Ajuste a largura do container, pode ser uma porcentagem */
+    max-width: 400px; /* Largura máxima para evitar que fique muito largo em telas grandes */
+}
+
+.form-container {
+    text-align: center; /* Centraliza o texto dentro do container do formulário */
+    width: 100%; /* Garante que o formulário use toda a largura do container */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%; /* Ocupar toda a largura do container */
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Ocupar toda a largura do container */
+    margin-top: 10px; /* Espaço entre o botão e o campo de pesquisa */
+    text-align: center; /* Centraliza o texto do botão */
+}
+
+button:hover {
+    background-color: #5a3e9d;
+}
+
+#result {
+    margin-top: 20px; /* Espaço entre o formulário e o resultado */
+    width: 100%; /* Para ocupar a largura total se necessário */
+}
+
+#result table {
+    width: 100%; /* A tabela ocupa toda a largura do container */
+    border-collapse: collapse; /* Remove espaços entre bordas */
+}
+
+#result th, #result td {
+    text-align: left; /* Alinhamento à esquerda */
+    padding: 8px; /* Espaçamento interno das células */
+    border: 1px solid #ddd; /* Borda das células */
+}
+
+#result th {
+    background-color: #6f42c1; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+}
+
+#result tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo para linhas pares */
+}
+
